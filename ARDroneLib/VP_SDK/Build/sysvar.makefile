@@ -375,6 +375,11 @@ else
    endif
 endif
 
+ifeq ($(USE_ARMV7),yes)
+      TARGET_CPU_ARM=1
+      TARGET_CPU_X86=0
+endif
+
 # All that needs to be exported
 ########################
 
